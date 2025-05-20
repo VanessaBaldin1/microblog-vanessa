@@ -32,6 +32,8 @@ require_once "../includes/cabecalho-admin.php";
                 Notícias
             </a>
             
+
+            <?php if($_SESSION['tipo'] === 'admin') { ?>
             <a class="btn btn-dark bg-gradient btn-lg" href="categorias.php">
                 <i class="bi bi-tags"></i> <br>
                 Categorias
@@ -40,6 +42,7 @@ require_once "../includes/cabecalho-admin.php";
                 <i class="bi bi-people"></i> <br>
                 Usuários
             </a>
+            <?php } ?>
             
         </div>
     </div>
